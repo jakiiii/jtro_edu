@@ -1,8 +1,14 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block title %}{{ title }} || {{ block.super }}{% endblock title %}
 
-{% block slider %}
-    {% include 'base/slider.html' %}
+
+{% block banner %}
+    {% include 'base/banner.html' %}
+{% endblock %}
+
+{% block bannler_text %}
+    {% include 'base/banner-text.html' %}
 {% endblock %}
 
 {% block feedback %}

@@ -8,6 +8,11 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.home.urls', namespace='home')),
+    path('category/', include('apps.category.urls', namespace='category')),
+    path('content-type/', include('apps.course_content.urls', namespace='content_type')),
+    path('platform/', include('apps.course_platform.urls', namespace='platform')),
+    path('subscription/', include('apps.subscription.urls', namespace='subscription')),
+    path('course/', include('apps.course.urls', namespace='course')),
 
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('hitcount/', include(('hitcount.urls', 'hitcount'), namespace='hitcount')),

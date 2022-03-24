@@ -55,6 +55,11 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     'apps.home',
+    'apps.category',
+    'apps.course_content',
+    'apps.course_platform',
+    'apps.subscription',
+    'apps.course',
 ]
 
 INSTALLED_APPS += THIRD_PARTY_APPS + LOCAL_APPS

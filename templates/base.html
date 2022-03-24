@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Luma</title>
+    <title>{% block title %}jTro Edu{% endblock %}</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -30,15 +30,14 @@
 
     <div id="header" class="mdk-header mdk-header--bg-dark bg-dark js-mdk-header mb-0"
          data-effects="parallax-background waterfall" data-fixed data-condenses>
-        <div class="mdk-header__bg">
-            <div class="mdk-header__bg-front"
-                 style="background-image: url({% static 'assets/images/photodune-4161018-group-of-students-m.jpg' %});"></div>
-        </div>
+
+        {% block banner %}{% endblock %}
+
         <div class="mdk-header__content justify-content-center">
 
             {% include 'base/navbar.html' %}
 
-            {% block slider %}{% endblock %}
+            {% block bannler_text %}{% endblock %}
         </div>
     </div>
 
