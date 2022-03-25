@@ -96,6 +96,9 @@
         </li>
     </ul>
 
+    <!-- search -->
+    {% include 'base/search.html' %}
+    <!-- search -->
 
     <ul class="nav navbar-nav ml-auto mr-0">
         <li class="nav-item">
@@ -106,4 +109,21 @@
             <a href="fixed-signup.html" class="btn btn-outline-white">Get Started</a>
         </li>
     </ul>
+
+    <div class="nav navbar-nav flex-nowrap d-flex mr-16pt">
+
+
+        <!-- Message dropdown -->
+        {% include 'base/messages.html' %}
+        <!-- // END Message dropdown -->
+
+
+        <!-- Notifications dropdown -->
+        {% include 'base/notifications.html' %}
+        <!-- // END Notifications dropdown -->
+
+        <!-- account settings -->
+        {% include 'base/settings.html' %}
+        <!-- account settings -->
+    </div>
 </div>

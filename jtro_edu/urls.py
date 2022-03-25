@@ -13,6 +13,8 @@ urlpatterns = [
     path('platform/', include('apps.course_platform.urls', namespace='platform')),
     path('subscription/', include('apps.subscription.urls', namespace='subscription')),
     path('course/', include('apps.course.urls', namespace='course')),
+    path('pricing/', include('apps.payment.urls', namespace='payment')),
+    path('instructor/', include('apps.instructor.urls', namespace='instructor')),
 
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('hitcount/', include(('hitcount.urls', 'hitcount'), namespace='hitcount')),

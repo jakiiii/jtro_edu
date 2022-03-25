@@ -60,6 +60,8 @@ LOCAL_APPS = [
     'apps.course_platform',
     'apps.subscription',
     'apps.course',
+    'apps.payment',
+    'apps.instructor',
 ]
 
 INSTALLED_APPS += THIRD_PARTY_APPS + LOCAL_APPS

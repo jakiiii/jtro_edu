@@ -1,0 +1,25 @@
+{% url 'course:course-preview' as course_preview_url %}
+{% url 'course:course-yours' as course_yours_url %}
+
+<div class="mdk-box bg-primary js-mdk-box mb-0" data-effects="blend-background">
+        <div class="mdk-box__content">
+            <div class="hero py-64pt text-center text-sm-left">
+                <div class="container page__container">
+                    <h1 class="text-white">Angular Fundamentals</h1>
+                    <p class="lead text-white-50 measure-hero-lead">It’s not every day that one of the most important
+                        front-end libraries in web development gets a complete overhaul. Keep your skills relevant and
+                        up-to-date with this comprehensive introduction to Google’s popular community project.</p>
+                    <div class="d-flex flex-column flex-sm-row align-items-center justify-content-start">
+                        {% if request.path == course_preview_url %}
+                        <a href="{% url 'course:course-trailer' %}" class="btn btn-outline-white mb-16pt mb-sm-0 mr-sm-16pt">Watch
+                            trailer <i class="material-icons icon--right">play_circle_outline</i></a>
+                        <a href="{% url 'payment:pricing' %}" class="btn btn-white">Start your free trial</a>
+                        {% endif %}
+                        {% if request.path == course_yours_url %}
+                        <a href="{% url 'course:course-lesson' %}" class="btn btn-white">Resume course</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

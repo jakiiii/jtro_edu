@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block context %}
+    <!-- Header Layout Content -->
+    {% block course %}{% endblock %}
+
+    <!-- about course -->
+    {% include 'course/snippets/about_course.html' %}
+    <!-- about course -->
+
+    <!-- about author -->
+    {% include 'course/snippets/about_author.html' %}
+    <!-- about author -->
+
+    <!-- feedback -->
+    {% include 'base/feedback.html' %}
+    <!-- feedback -->
+
+    <!-- feedback student -->
+    {% include 'course/snippets/feedback_student.html' %}
+    <!-- feedback student -->
+
+    <!-- top course -->
+    {% include 'course/snippets/top_course.html' %}
+    <!-- top course -->
+
+    </div>
+    <!-- // END Header Layout Content -->
+
+{% endblock %}
